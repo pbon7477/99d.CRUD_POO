@@ -1,0 +1,116 @@
+
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+section {
+    margin: 10px;
+    border:dashed 1px #999;
+    background-color: #e7e4e4;
+    padding: 5px;
+    
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(4,24.5%);
+   
+    justify-content: center;
+    gap:5px;
+}
+
+.cajita{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border:1px dashed #888;    
+    padding: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    color:#639795;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.cajita p {
+    margin:0px;
+    padding: 0px;
+}
+
+.cajita img {
+    width: 100%;
+}
+.cajita a{
+    color:#3392d1;
+}
+.cajita a:hover{
+    color:#ffffff;
+}
+.vermas{
+    width: 60px;
+    /* border: 1px red dashed; */
+}
+
+.btnEdiciones{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+
+.cajitaVer{
+    display:flex;
+    flex-direction: column;
+    width: 450px;
+    margin:5px auto 50px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.cajitaVer img{
+    width: 100%;
+    border:1px dashed #555;
+    padding: 2px;    
+}
+
+.item img{
+    width: 100%;
+}
+
+.noImg{
+    width: 350px;
+}
+
+.subrrayar{
+    color:red;
+}
+
+
+@media only screen and (max-width:992px){
+    .container-grid{
+        display: grid;
+        grid-template-columns: repeat(3,30.4%);
+        
+    }
+}
+
+@media only screen and (max-width:820px){
+    .container-grid{
+        display: grid;
+        grid-template-columns: repeat(2,48.2%);
+        
+    }
+}
+
+
+@media only screen and (max-width:576px){
+    .container-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        
+    }
+}
